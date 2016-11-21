@@ -32,7 +32,8 @@ defmodule Imgur.CLI do
   end
 
   def process({count}) do
-    IO.puts count
+    #IO.puts (["Args: ", count])
+    Imgur.FetchViral.fetch(count)
   end
 
 end
